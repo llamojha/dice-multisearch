@@ -1,0 +1,18 @@
+{
+  "name": "dice-web-scrape",
+  "version": "0.0.1",
+  "description": "Scrape dice  web.",
+  "main": "dice_scrap.js",
+  "author": "amllamojha",
+  "dependencies": {
+    "cheerio": "latest",
+    "express": "latest",
+    "gulp": "^3.9.1",
+    "gulp-data": "^1.2.1",
+    "nunjucks": "^3.0.1",
+    "request": "latest"
+  },
+  "devDependencies": {
+    "gulp-nunjucks-render": "^2.2.1"
+  }
+}

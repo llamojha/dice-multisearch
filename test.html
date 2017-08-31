@@ -1,0 +1,65 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="icon" href="https://dice.fm/favicon.ico" type="image/x-icon">
+  <link rel="search" type="application/opensearchdescription+xml" title="DICE" href="https://dice.fm/opensearch.xml">
+  <link rel="manifest" href="https://dice.fm/google.app.manifest.json">
+  <link rel="stylesheet" href="/main.css">
+  <meta name="react-comment-hack"><!--[if lt IE 9]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+  <script src="//cdn.optimizely.com/js/1905000105.js"></script>
+  <script>(window.optimizely || []).push(["activate"]);</script>
+  <title>Tickets | DICE</title>
+  <meta name="apple-itunes-app" content="app-id=898358948, app-argument=dice://open/events" data-react-helmet="true" />
+  <meta name="apple-mobile-web-app-capable" content="yes" data-react-helmet="true" />
+  <meta property="al:android:url" content="dice://open/events" data-react-helmet="true" />
+  <meta property="al:ios:url" content="dice://open/events" data-react-helmet="true" />
+  <meta property="twitter:app:url:googleplay" content="dice://open/events" data-react-helmet="true" />
+  <meta property="twitter:app:url:iphone" content="dice://open/events" data-react-helmet="true" />
+  <meta property="twitter:card" content="app" data-react-helmet="true" />
+  <meta http-equiv="last-modified" content="2017-08-30T10:05:35.456Z" data-react-helmet="true" />
+  <meta property="twitter:image" content="https://d16ts2h1awhyrg.cloudfront.net/1496147995486fmGufO4BOCvzWnXTp--large.jpg" data-react-helmet="true" />
+  <meta property="og:image" content="https://d16ts2h1awhyrg.cloudfront.net/1496147995486fmGufO4BOCvzWnXTp--large.jpg" data-react-helmet="true" />
+  <meta property="twitter:description" content="" data-react-helmet="true" />
+  <meta property="og:description" content="" data-react-helmet="true" />
+  <meta name="description" content="" data-react-helmet="true" />
+  <meta property="twitter:title" content="Tickets | DICE" data-react-helmet="true" />
+  <meta property="og:title" content="Tickets | DICE" data-react-helmet="true" />
+  <meta name="og:type" content="article" data-react-helmet="true" />
+  <meta name="twitter:app:id:googleplay" content="fm.dice" data-react-helmet="true" />
+  <meta name="twitter:app:name:googleplay" content="DICE" data-react-helmet="true" />
+  <meta name="twitter:app:id:iphone" content="898358948" data-react-helmet="true" />
+  <meta name="twitter:app:name:iphone" content="DICE - Best gig tickets in London" data-react-helmet="true" />
+  <meta name="twitter:app:country" content="US" data-react-helmet="true" />
+  <meta property="og:site_name" content="Tickets to the best gigs, clubs and festivals - Get the App now | DICE" data-react-helmet="true" />
+  <meta property="fb:app_id" content="1442841292655269" data-react-helmet="true" />
+  <meta property="al:android:package" content="fm.dice" data-react-helmet="true" />
+  <meta property="al:android:app_name" content="DICE" data-react-helmet="true" />
+  <meta property="al:ios:app_name" content="DICE" data-react-helmet="true" />
+  <meta property="al:ios:app_store_id" content="898358948" data-react-helmet="true" />
+  <meta name="keywords" content="DICE, DICE App, DICE FM, Music, Gigs, Gig Tickets, Concerts, Ticketing, Events, iPhone app, Android, Festival" data-react-helmet="true" />
+  <link rel="canonical" href="https://127.0.0.1:8000" data-react-helmet="true" />
+</head>
+<body>
+<h1>DICE - MULTISEARCH</h1>
+<div class="event">
+  {% for event in events %}
+  <a class="event-list__item" href="{{ event.ticket }}">
+    <div class="background-image" style="background-image: url({{ event.image }})">
+    </div>
+    <span></span>
+    <div class="event-list__item__meta" style="background-color:rgba(42, 183, 171, 1);">
+      <div class="event-list__item__meta__top">
+        <h3 class="event-list__item__title">{{ event.name }}</h3>
+        <div class="event-list__item__date">{{ event.startDate }}</div>
+        <div class="event-list__item__venue">
+          <span>{{ event.venue }}</span>
+        </div>
+      </div>
+      <div class="event-list__item__price">£12</div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+</body></html>
