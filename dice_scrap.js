@@ -23,6 +23,8 @@ var urls = [];
 
 var artists = ["traams","queens-of-the-stone-age","the-big-moon"];
 
+// if not in artist then use https://dice.fm/_data/search/events;query=our-girl
+
 for(artist in artists){
   urls.push(diceUrl+artists[artist]);
 }
@@ -50,8 +52,8 @@ for(u in urls){
         ticket : event['url'],
         startDate : Date(event['doorTime']),
         venue : event['location']['name'],
-        address : event['location']['address'],
-        price : event['offers'][0]['price']
+        price : event['offers'][0]['price'],
+        address : event['location']['address']
       });
     }
   });
